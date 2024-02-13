@@ -1,0 +1,45 @@
+.headerWrapper { 
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+h1{
+  padding-top: 40vh;
+  color: transparent;
+  padding-bottom: 32px;
+}
+
+.H1{
+  background: linear-gradient(to right, #FFFFFF,#B9BABE,#FFFFFF);
+  -webkit-background-clip: text; /* Настройка для Safari */
+  color: transparent;
+  background-clip: text;
+}
+
+h3{
+  margin-bottom: 72px;
+}
+
+.btn{
+  display: flex;
+  padding: 15px 60px;
+  align-items: center;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: 40px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 20px;
+  transition: background 0.7s ease;
+}
+
+.btn:hover{
+  background: #4870FF;
+  box-shadow: 0px 3px 42.5px 0px #5B6EFF46;
+
+}
+
+

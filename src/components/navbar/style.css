@@ -1,0 +1,54 @@
+.nav {
+  
+  position: absolute;
+  width: 87.5vw;
+  height: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+  background-color: rgba(18, 18, 26, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 48px;
+  align-items: center; /* Центрирование элементов по вертикали */
+  color: #fff;
+}
+
+.nav-row {
+  display: flex;  
+  justify-content: space-between !important;
+  align-items: center; /* Центрирование элементов по вертикали */
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  gap: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-logo {
+  margin-left: 25px;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.nav button {
+  padding: 13px 36px;
+  background: linear-gradient(to right, #6f6bff, #4870ff);
+  border-radius: 30px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+@media (max-width: 1100px) {
+  .nav-list{
+    gap: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-list{
+    gap: 40px;
+  }
+}
