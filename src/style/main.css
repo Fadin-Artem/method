@@ -4,6 +4,8 @@
 body{
   font-family: 'Inter';
   background-color: #0E0E10;
+  overflow-x: hidden;
+   
 }
 
 h1{

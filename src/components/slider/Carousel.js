@@ -1,11 +1,15 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./style.css";
 
 const Carousel = () => {
-  const images = [require("./css.png"), 
-  require("./html.png"), 
- require("./Sass.png")];
+  
+  const images = [
+    require("../../components/slider/css.png"),
+    require("../../components/slider/html.png"),
+    require("../../components/slider/Sass.png"),
+  ];
 
   const settings = {
     arrows: false, // Отключаем кнопки для перелистывания слайдов
@@ -20,13 +24,15 @@ const Carousel = () => {
   };
 
   return (
-    <Slider {...settings}>
+    <div className="slider">
+      <Slider {...settings}>
       {images.map((image, index) => (
         <div key={index}>
           <img src={image} alt={`Slide ${index}`} />
         </div>
       ))}
     </Slider>
+    </div>
   );
 };
 
