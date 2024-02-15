@@ -1,0 +1,46 @@
+.img{
+  border-radius: 18px;
+  max-width: 630px;
+}
+
+.sliderCard{
+  margin-right: 20px;
+}
+
+h4{
+  margin-top: 10px;
+  margin-bottom: 7.5px;
+  color: #fff;
+}
+
+p{
+  color: #fff;
+}
+
+.slider--buttons{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+
+.slider--button{
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: #15151A;
+  transition: all 0.3s ease;
+}
+
+.slider--button__active{
+  border: 0px solid rgba(255,255,255,0.2);
+  background: linear-gradient(to right,#6F6BFF,#4870FF);
+}
+
+.slider--button:hover{
+  opacity: 95%;
+}
