@@ -1,19 +1,19 @@
 .img{
   border-radius: 18px;
-  max-width: 630px;
+  max-width: 41vw;
 }
 
 .sliderCard{
   margin-right: 20px;
 }
 
-h4{
+.sliderCard--title{
   margin-top: 10px;
   margin-bottom: 7.5px;
   color: #fff;
 }
 
-p{
+.sliderCard--text{
   color: #fff;
 }
 
@@ -37,10 +37,14 @@ p{
 }
 
 .slider--button__active{
-  border: 0px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0);
   background: linear-gradient(to right,#6F6BFF,#4870FF);
 }
 
 .slider--button:hover{
-  opacity: 95%;
+  opacity: 75%;
+}
+
+.slider--button__active:hover{
+  opacity: 100%;
 }

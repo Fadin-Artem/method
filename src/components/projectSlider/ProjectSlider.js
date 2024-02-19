@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 
 const ProjectSlider = () => {
+  
+   
+  
   const settings = {
     arrows: false, // Отключаем кнопки для перелистывания слайдов
     dots: false, // Отключаем пагинацию
@@ -17,6 +20,20 @@ const ProjectSlider = () => {
   };
 
   const images = [require("./FinManager.png"), require("./Qhabit.png")];
+
+  const buttons = document.querySelectorAll('.slider--button');
+
+  const handleClick = (event) => {
+    console.log('Кликнут элемент:', event.target);
+    buttons.forEach(element => {
+      element.classList.remove('slider--button__active')
+    });
+    event.target.classList.add('slider--button__active')
+  };
+
+  buttons.forEach(e => {
+    e.addEventListener('click', handleClick)
+  })
 
   return (
     <div className="slider">
@@ -32,8 +49,8 @@ const ProjectSlider = () => {
         {images.map((image, index) => (
           <div key={index} className="sliderCard">
             <img src={image} alt={`Slide ${index}`} className="img" />
-            <h4>Qhabit Mobile App</h4>
-            <p>#Мобильное приложение</p>
+            <h4 className="sliderCard--title">Qhabit Mobile App</h4>
+            <p className="sliderCard--text">#Мобильное приложение</p>
           </div>
         ))}
       </Slider>

@@ -1,6 +1,7 @@
 import Header from "../../components/header/Header";
 import Slider from "../../components/slider/Carousel";
 import ProjectSlider from "../../components/projectSlider/ProjectSlider";
+import Preferences from "../../components/preferences/Preferences";
 import "./style.css";
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
       <Slider />
       <h2 className="subtitle__projects">Наши проекты</h2>
       <ProjectSlider />
-      <h2>Наши преимущества</h2>
+      <h2 className="subtitle__benefits">Наши преимущества</h2>
+      <Preferences />
     </div>
   );
 };

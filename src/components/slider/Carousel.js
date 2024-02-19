@@ -9,6 +9,15 @@ const Carousel = () => {
     require("../../components/slider/css.png"),
     require("../../components/slider/html.png"),
     require("../../components/slider/Sass.png"),
+    require("../../components/slider/JavaScript.png"),
+    require("../../components/slider/React.png"),
+    require("../../components/slider/Python.png"),
+    require("../../components/slider/Git.png"),
+    require("../../components/slider/Figma.png"),
+    require("../../components/slider/Photoshop.png"),
+    require("../../components/slider/Illustrator.png"),
+    require("../../components/slider/after.png"),
+    require("../../components/slider/Premier.png"),
   ];
 
   const settings = {
@@ -16,7 +25,7 @@ const Carousel = () => {
     dots: false, // Отключаем пагинацию
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 3000,
